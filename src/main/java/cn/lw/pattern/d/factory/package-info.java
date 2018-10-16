@@ -11,6 +11,9 @@
  *  作为一种创建类模式，在任何需要生成复杂对象的地方，都可以使用工厂方法模式。
  *  如果复杂对象不止一个，可以使用抽象工厂模式
  *
+ * e.g.
+ *  Spring中的BeanFactory接口定义了多个getBean方法
+ *
  * Created by VictorLiu on 2018/10/16.
  */
 package cn.lw.pattern.d.factory;
