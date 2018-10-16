@@ -1,8 +1,8 @@
 package cn.lw.pattern.d.factory.simple;
 
 import cn.lw.pattern.d.factory.common.ProductHead;
-import cn.lw.pattern.d.factory.common.ProductHeadFile;
-import cn.lw.pattern.d.factory.common.ProductXmlString;
+import cn.lw.pattern.d.factory.common.ProductHeadJson;
+import cn.lw.pattern.d.factory.common.ProductHeadXml;
 
 /**
  * Created by VictorLiu on 2018/10/16.
@@ -10,9 +10,9 @@ import cn.lw.pattern.d.factory.common.ProductXmlString;
 public class SimpleAFactory {
 
     public ProductHead create(String name) {
-        if("1".equals(name))
-            return new ProductHeadFile();
+        if("json".equals(name))
+            return new ProductHeadJson();
         else
-            return new ProductXmlString();
+            return new ProductHeadXml();
     }
 }
