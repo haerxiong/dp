@@ -35,13 +35,12 @@ public class FactoryDemo {
             name1 = "a";
             name2 = "b";
         }
-        ProductHead nf1 = methodFactory.create(name1);
-        ProductHead nf2 = methodFactory.create(name2);
+        ProductHead productHead = methodFactory.create(name1);
 
         // 抽象工厂
         FactoryProducer producer = new FactoryProducer();
         AbstractFactory jsonFactory = producer.getFactory(true);
-        jsonFactory.head("");
-        jsonFactory.body("");
+        ProductHead head = jsonFactory.head("");
+        ProductBody body = jsonFactory.body("");
     }
 }
