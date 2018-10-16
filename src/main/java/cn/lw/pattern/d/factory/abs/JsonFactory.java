@@ -1,4 +1,4 @@
-package cn.lw.pattern.d.factory.complex;
+package cn.lw.pattern.d.factory.abs;
 
 import cn.lw.pattern.d.factory.common.ProductBodyJson;
 import cn.lw.pattern.d.factory.common.ProductHeadJson;

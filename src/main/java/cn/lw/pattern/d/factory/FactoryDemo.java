@@ -2,8 +2,8 @@ package cn.lw.pattern.d.factory;
 
 import cn.lw.pattern.d.factory.common.ProductHead;
 import cn.lw.pattern.d.factory.common.ProductBody;
-import cn.lw.pattern.d.factory.complex.AbstractFactory;
-import cn.lw.pattern.d.factory.complex.FactoryProducer;
+import cn.lw.pattern.d.factory.abs.AbstractFactory;
+import cn.lw.pattern.d.factory.abs.FactoryProducer;
 import cn.lw.pattern.d.factory.method.XmlFactory;
 import cn.lw.pattern.d.factory.method.StringXmlFactory;
 import cn.lw.pattern.d.factory.method.FileXmlFactory;

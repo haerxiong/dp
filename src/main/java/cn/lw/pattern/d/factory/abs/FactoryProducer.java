@@ -1,4 +1,4 @@
-package cn.lw.pattern.d.factory.complex;
+package cn.lw.pattern.d.factory.abs;
 
 /**
  * Created by VictorLiu on 2018/10/16.
