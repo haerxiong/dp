@@ -35,12 +35,16 @@ public class ProxyDemo {
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(ADao.class);
         enhancer.setCallback((MethodInterceptor) (Object o, Method method, Object[] objects, MethodProxy proxy) -> {
+            if("setTag".equals(method.getName())) {
+                return proxy.invokeSuper(o, objects);
+            }
             System.out.println("cglib动态代理 before");
             Integer rs = (Integer) proxy.invokeSuper(o, objects);
             System.out.println("cglib动态代理 after 返回值+2");
             return rs+2;
         });
-        ICRUD cglibProxy = (ICRUD) enhancer.create();
+        ADao cglibProxy = (ADao) enhancer.create();
+        cglibProxy.setTag("lw");
         System.out.println(cglibProxy.update());
     }
 }
